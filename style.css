@@ -1,0 +1,552 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+
+nav input {
+    width: 25vw;
+    padding: 1.5rem;
+    margin-right: 3rem;
+}
+
+nav button {
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+
+.header-images {
+    display: grid;
+    grid-template-areas: 
+        "nisha nisha spunky shredded super"
+        "nisha nisha redape disk duck"
+    ;
+    height: 80vh;
+    width: 95vw;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.header-images div {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-images p {
+    font-size: 2.4rem;
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 50%;
+}
+
+.header-images div:nth-child(1) {
+    background-image: url(./img/nisha.png);
+    grid-area: nisha;
+}
+
+.header-images div:nth-child(2) {
+    background-image: url(./img/spunky.png);
+    grid-area: spunky;
+}
+
+.header-images div:nth-child(3) {
+    background-image: url(./img/shredded.png);
+    grid-area: shredded;
+}
+
+.header-images div:nth-child(4) {
+    background-image: url(./img/super.png);
+    grid-area: super;
+}
+
+.header-images div:nth-child(5) {
+    background-image: url(./img/redape.png);
+    grid-area: redape;
+}
+
+.header-images div:nth-child(6) {
+    background-image: url(./img/disk.png);
+    grid-area: disk;
+}
+
+.header-images div:nth-child(7) {
+    background-image: url(./img/duck.png);
+    grid-area: duck;
+}
+
+.section-1 {
+    background-color: white;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.section-1 .trending
+{
+    text-align: center;
+}
+.trending h2
+{
+    font-size: 3.3rem;
+    margin-bottom: 1rem;
+}
+.trending h2 span
+{
+    color: #00AAA4;
+}
+.trending p
+{
+    font-size: 1.6rem;
+    color: #00AAA4;
+    margin-bottom: 4rem;
+}
+
+.trending-coins img{
+    width: 7rem;
+    margin-bottom: .5rem;
+}
+
+.trending-coins div {
+    border: 1px solid #00AAA4;
+    padding: 2rem 3rem 1rem 3rem;
+    border-radius: 1.2rem;
+    margin: 0 2rem;
+    width: 37%;
+}
+
+.trending-coins {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+}
+.trending-coins div:nth-child(2)
+{
+    position: relative;
+    bottom: 2rem;
+}
+.trending-coin-title
+{
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+.trending-coins .price
+{
+    font-size: 1.1rem;
+}
+.trending-coins .percentage
+{
+    font-size: 1.1rem;
+    color: #00AAA4;
+}
+.trending-coin-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 2rem;
+    width: 90%;
+    margin: 8rem 8rem;
+}
+.trending-coin-grid>div
+{
+    border: .12rem solid #00AAA4;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trending-coin-grid .price-name
+{
+    margin-right: auto;
+}
+.trending-coin-grid img
+{
+    margin-right: 1.5rem;
+    width: 5rem;
+}
+.price-name p
+{
+    font-size: 1.3rem;
+}
+.price-name+p
+{
+    font-size: 1.4rem;
+    color: #00AAA4;
+}
+.section-2
+{
+    background-color:black;
+}
+.section-2 h2
+{
+    color: white;
+    font-size: 3.3rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+.collection-grid
+{
+    display: grid;
+    width: 85vw;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 3rem;
+}
+.coin-info
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.background img
+{
+    width: 100%;
+    display: block;
+}
+.coin-info>div
+{
+    border-radius: 1rem;
+    border: 1px solid #00aaa4;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.coin-info > img
+{
+    width: 3rem;
+}
+.coin-info>div>div
+{
+    margin: 0 2rem 0 1rem;
+}
+.background
+{
+    position: relative;
+}
+.background p
+{
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+    font-size: 2rem;
+    color: white;
+}
+.section-2 a
+{
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 6rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    width: 20%;
+    color: white;
+    background-color: aqua;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform:translateX(-50%);
+    margin: 4rem 0;
+}
+.menu-icon
+{
+    display: none;
+}
+.section-3
+{
+    width: 90vw;
+    margin: 0 auto;
+}
+.section-3 h2
+{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(1, 1, 1);
+    margin: 4rem 0;
+}
+.section-3-grid-container
+{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+}
+.section-3 article
+{
+    border: 1px solid rgb(110, 110, 110);
+    padding: 2rem;
+    padding-top: .5rem;
+    border-radius: 1rem;
+}
+.section-3 article div:nth-child(1)
+{
+    margin: 0 0 1.7rem 0;
+}
+article > img
+{
+    width: 85%;
+}
+.first-image
+{
+    margin-right: 13rem;
+}
+.simon
+{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.simon p
+{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgb(87, 86, 86);
+    font-family:sans-serif;
+}
+.buy-now
+{
+    display: flex;
+}
+.buy-now p:nth-child(1)
+{
+    margin-right: 10rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: rgb(0, 194, 194);
+}
+.buy-now p:nth-child(2)
+{
+    font-size: 1.1rem;
+}
+footer
+{
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+.footer-div
+{
+    display: flex;
+    margin: 7rem auto;
+    width: 60%;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: rgb(87, 86, 86);
+    font-weight: bold;
+}
+.footer-div p
+{
+    margin-bottom: 3rem;
+}
+.socials
+{
+    margin-left: -4.5rem;
+}
+.socials img
+{
+    margin: 0 .8rem;
+}
+.div-2
+{
+    margin-top: -2.5rem;
+}
+.apps img
+{
+    margin: 0 .5rem;
+}
+footer>img
+{
+    width: 10rem;
+    margin-left: 6.5rem;
+    margin-bottom: .9rem;
+}
+.bottom
+{
+    margin-left: 6.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    font-weight: bolder;
+    color: rgb(87, 86, 86);
+}
+.line
+{
+    border-bottom: .1rem solid black;
+    width: 55%;
+    margin: 0 1.2rem;
+}
+.line + p
+{
+    font-size: 1.1rem;
+}
+@media (max-width: 1000px)
+{
+    nav div 
+    {
+        display: none;
+    }
+    .menu-icon
+    {
+        display: block;
+    }
+    .header-images 
+    {
+        height: 200vh;
+        width: 80vw;
+        /* width: 40%; */
+        grid-template-areas: 
+        "nisha nisha"
+        "nisha nisha"
+        "super redape"
+        "spunky shredded "
+        "disk duck";
+    }
+}
+@media (max-width: 850px)
+{
+    .collection-grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-3-grid-container
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .trending-coins
+    {
+        flex-wrap: wrap;
+    }
+    .trending-coins div:nth-child(2)
+    {
+        bottom: 0;
+    }
+    .trending-coins div:nth-child(3)
+    {
+        position: relative;
+        top: 5rem;
+        left: 27%;
+        margin-bottom: 5rem;
+    }
+    .footer-div
+    {
+        flex-direction: column;
+        margin-top: -7rem;
+    }
+}
+@media (max-width: 730px)
+{
+    .header-images
+    {
+        height: 230vh;
+        width: 40%;
+        grid-template-areas: 
+        "nisha"
+        "super"
+        "redape"
+        "spunky"
+        "shredded"
+        "disk"
+        "duck"
+        ;
+    }
+    .trending h2
+    {
+        margin-top: 7rem;
+    }
+    .trending-coins
+    {
+        display: flex;
+        flex-direction: column;
+        width: 50rem;
+    }
+    .trending-coins div:nth-child(3)
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 5rem;
+    }
+    .trending-coins div
+    {
+        margin: 1rem auto;
+        position: relative;
+    }
+    .div-2 
+    {
+        margin-top: 2.5rem;
+    }
+    .trending-coin-grid
+    {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+    }
+    .collection-grid
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-2 a
+    {
+       width: 50%;
+       color: black;
+    }
+    .section-3-grid-container .article3
+    {
+        /* display: flex;
+        flex-direction: column; */
+        position: relative;
+        top: 69.3rem;
+        left: -30rem;
+    }
+    footer
+    {
+        margin-top: 48rem;
+    }
+
+}
